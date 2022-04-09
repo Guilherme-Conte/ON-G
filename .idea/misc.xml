@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ON-G/PI.ON-G/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ONG/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/PI.ON-G/app/src/main/res/layout/activity_main.xml" value="0.67" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ProjetoIntegrador 2/PI.ON-G/app/src/main/res/layout/card_feed_postagem.xml" value="0.2" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ProjetoIntegrador 2/PI.ON-G/app/src/main/res/layout/fragment_formulario_post.xml" value="0.2" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ProjetoIntegrador 2/PI.ON-G/app/src/main/res/layout/fragment_postagem.xml" value="0.1" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ProjetoIntegrador/PI.ON-G/app/src/main/res/layout/activity_main.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ProjetoIntegrador/PI.ON-G/app/src/main/res/layout/activity_segundatela.xml" value="0.22" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ProjetoIntegrador/PI.ON-G/app/src/main/res/layout/card_feed_postagem.xml" value="0.15384615384615385" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ProjetoIntegrador/PI.ON-G/app/src/main/res/layout/fragment_formulario_post.xml" value="0.19718309859154928" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ProjetoIntegrador/PI.ON-G/app/src/main/res/layout/fragment_postagem.xml" value="0.25" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ProjetosAndroidStudios/ProjetoIntegrador/PI.ON-G/app/src/main/res/layout/fragment_formulario_post.xml" value="0.2" />
+        <entry key="..\:/Users/noota/AndroidStudioProjects/ProjetosAndroidStudios/ProjetoIntegrador/PI.ON-G/app/src/main/res/layout/fragment_postagem.xml" value="0.2" />
+        <entry key="..\:/Users/usuario/Desktop/ProjetosAndroidStudios/ProjetoIntegrador 2/PI.ON-G/app/src/main/res/layout/fragment_entrar.xml" value="0.33" />
+        <entry key="..\:/Users/usuario/Desktop/ProjetosAndroidStudios/ProjetoIntegrador 2/PI.ON-G/app/src/main/res/layout/fragment_postagem.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/usuario/Desktop/ProjetosAndroidStudios/ProjetoIntegrador 2/PI.ON-G/app/src/main/res/layout/fragment_registrar.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/usuario/Desktop/ProjetosAndroidStudios/ProjetoIntegrador 2/PI.ON-G/app/src/main/res/layout/fragment_registro.xml" value="0.358695652173913" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

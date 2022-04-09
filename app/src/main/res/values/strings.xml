@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Task do PI</string>
+    <string-array name="itens">
+        <item>Humanitária</item>
+        <item>Vestimentas</item>
+        <item>Alimenticia</item>
+        <item>Animais</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="FloatingButton">FloatingAdd</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

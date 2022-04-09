@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/postagemFragment">
+
+    <fragment
+        android:id="@+id/postagemFragment"
+        android:name="com.generation.on_g.PostagemFragment"
+        android:label="fragment_postagem"
+        tools:layout="@layout/fragment_postagem" >
+        <action
+            android:id="@+id/action_postagemFragment_to_formularioPostFragment"
+            app:destination="@id/formularioPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formularioPostFragment"
+        android:name="com.generation.on_g.FormularioPostFragment"
+        android:label="fragment_formulario_post"
+        tools:layout="@layout/fragment_formulario_post" >
+        <action
+            android:id="@+id/action_formularioPostFragment_to_postagemFragment"
+            app:destination="@id/postagemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.generation.on_g.registroFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registroFragment_to_postagemFragment"
+            app:destination="@id/postagemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entrarFragment"
+        android:name="com.generation.on_g.EntrarFragment"
+        android:label="fragment_entrar"
+        tools:layout="@layout/fragment_entrar" >
+        <action
+            android:id="@+id/action_entrarFragment2_to_registroFragment"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_entrarFragment2_to_postagemFragment"
+            app:destination="@id/postagemFragment" />
+    </fragment>
+</navigation>

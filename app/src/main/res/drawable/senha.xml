@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="346dp"
+    android:height="48dp"
+    android:viewportWidth="346"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#FF37333D"
+        android:pathData="M2 14C2 7.37 7.37 2 14 2h318c6.63 0 12 5.37 12 12v20c0 6.63-5.37 12-12 12H14C7.37 46 2 40.63 2 34V14Z"/>
+    <path
+        android:pathData="M14 3.25h318v-2.5H14v2.5ZM342.75 14v20h2.5V14h-2.5ZM332 44.75H14v2.5h318v-2.5ZM3.25 34V14h-2.5v20h2.5ZM14 44.75C8.06 44.75 3.25 39.94 3.25 34h-2.5c0 7.32 5.93 13.25 13.25 13.25v-2.5ZM342.75 34c0 5.94-4.81 10.75-10.75 10.75v2.5c7.32 0 13.25-5.93 13.25-13.25h-2.5ZM332 3.25c5.94 0 10.75 4.81 10.75 10.75h2.5c0-7.32-5.93-13.25-13.25-13.25v2.5ZM14 0.75C6.68 0.75 0.75 6.68 0.75 14h2.5C3.25 8.06 8.06 3.25 14 3.25v-2.5Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="2"
+                android:startY="2"
+                android:endX="344"
+                android:endY="46">
+                <item
+                    android:color="#FF000AFF"
+                    android:offset="0"/>
+                <item
+                    android:color="#FFFF00E5"
+                    android:offset="0.73"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FFC6C2CA"
+        android:pathData="M21.25 20c0 0.41 0.34 0.75 0.75 0.75s0.75-0.34 0.75-0.75h-1.5Zm2 5v4h1.5v-4h-1.5ZM22 30.25h-6v1.5h6v-1.5ZM14.75 29v-4h-1.5v4h1.5Zm2-9c0-1.24 1-2.25 2.25-2.25v-1.5c-2.07 0-3.75 1.68-3.75 3.75h1.5ZM19 17.75c1.24 0 2.25 1 2.25 2.25h1.5c0-2.07-1.68-3.75-3.75-3.75v1.5Zm-3 6h6v-1.5h-6v1.5ZM15.25 20v3h1.5v-3h-1.5ZM16 30.25c-0.69 0-1.25-0.56-1.25-1.25h-1.5c0 1.52 1.23 2.75 2.75 2.75v-1.5ZM23.25 29c0 0.69-0.56 1.25-1.25 1.25v1.5c1.52 0 2.75-1.23 2.75-2.75h-1.5Zm1.5-4c0-1.52-1.23-2.75-2.75-2.75v1.5c0.69 0 1.25 0.56 1.25 1.25h1.5Zm-10 0c0-0.69 0.56-1.25 1.25-1.25v-1.5c-1.52 0-2.75 1.23-2.75 2.75h1.5Z"/>
+</vector>

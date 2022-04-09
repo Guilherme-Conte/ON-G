@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D28"
+    tools:context=".registroFragment">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo_menor2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+    <ImageView
+        android:id="@+id/imageEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageNome" />
+
+    <ImageView
+        android:id="@+id/imageTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/telefone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageEmail" />
+
+    <ImageView
+        android:id="@+id/imageSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageTelefone" />
+
+    <ImageView
+        android:id="@+id/imageConfiSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageSenha" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#6A6565"
+        android:textColorHint="#6A6565"
+        app:layout_constraintBottom_toBottomOf="@+id/imageNome"
+        app:layout_constraintEnd_toEndOf="@+id/imageNome"
+        app:layout_constraintStart_toStartOf="@+id/imageNome"
+        app:layout_constraintTop_toTopOf="@+id/imageNome" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#6A6565"
+        app:layout_constraintBottom_toBottomOf="@+id/imageEmail"
+        app:layout_constraintEnd_toEndOf="@+id/imageEmail"
+        app:layout_constraintStart_toStartOf="@+id/imageEmail"
+        app:layout_constraintTop_toTopOf="@+id/imageEmail" />
+
+    <EditText
+        android:id="@+id/editTelefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="#6A6565"
+        app:layout_constraintBottom_toBottomOf="@+id/imageTelefone"
+        app:layout_constraintEnd_toEndOf="@+id/imageTelefone"
+        app:layout_constraintStart_toStartOf="@+id/imageTelefone"
+        app:layout_constraintTop_toTopOf="@+id/imageTelefone" />
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#6A6565"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSenha"
+        app:layout_constraintEnd_toEndOf="@+id/imageSenha"
+        app:layout_constraintStart_toStartOf="@+id/imageSenha"
+        app:layout_constraintTop_toTopOf="@+id/imageSenha" />
+
+    <EditText
+        android:id="@+id/editConfiSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:ems="10"
+        android:hint="Confirmar Senha"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#6A6565"
+        app:layout_constraintBottom_toBottomOf="@+id/imageConfiSenha"
+        app:layout_constraintEnd_toEndOf="@+id/imageConfiSenha"
+        app:layout_constraintStart_toStartOf="@+id/imageConfiSenha"
+        app:layout_constraintTop_toTopOf="@+id/imageConfiSenha" />
+
+    <ImageButton
+        android:id="@+id/ButtonRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/bregistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageConfiSenha" />
+</androidx.constraintlayout.widget.ConstraintLayout>
