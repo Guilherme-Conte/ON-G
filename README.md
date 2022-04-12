@@ -25,13 +25,12 @@
   - Criamos o feed de  postagens 
  
  ### Back-End (Tecnologias e Aplicações Utilizadas)
- - Room
  - Retrofit / Hilt / Glide
  - MVVM (Main View: View Model)
  - Live Data
  - POO (Programação Orientada a Objeto)
  - Coroutines
- - Api do Google Maps
+ - API do Google Maps
 
 ### Equipe ON-G
 
