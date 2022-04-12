@@ -114,7 +114,7 @@ class registroFragment : Fragment() {
                    "telefone" to telefone,
                    "senha" to senha
                )
-               db.collection("Usuários").document(nome)
+               db.collection("Usuários").document("Dados")
                 .set(usuarioMap).addOnCompleteListener {
                      Log.d("db", "Sucesso ao salvar os dados do usuário!")
 

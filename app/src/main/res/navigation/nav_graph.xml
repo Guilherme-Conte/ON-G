@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_postagemFragment_to_formularioPostFragment"
             app:destination="@id/formularioPostFragment" />
+        <action
+            android:id="@+id/action_postagemFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
     </fragment>
     <fragment
         android:id="@+id/formularioPostFragment"
@@ -23,4 +26,9 @@
             android:id="@+id/action_formularioPostFragment_to_postagemFragment"
             app:destination="@id/postagemFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.generation.on_g.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
 </navigation>
