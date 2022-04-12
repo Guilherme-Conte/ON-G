@@ -31,7 +31,9 @@
  - Live Data
  - POO (Programação Orientada a Objeto)
  - Coroutines
- - Api do Google Maps 
+ - Api do Google Maps
+
+### Equipe ON-G
 
 **Para saber mais sobre a equipe, clique no link abaixo :**
 
