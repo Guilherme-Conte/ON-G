@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "795972208784",
+    "project_id": "on-g-auth",
+    "storage_bucket": "on-g-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795972208784:android:885cba961551674cc63015",
+        "android_client_info": {
+          "package_name": "com.generation.on_g"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795972208784-a7t0en1h4v54bl0cc9b0lr5fm5b8l6li.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyHMVt9c0VHmpxKVLJNwIAxA49QuSqwSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795972208784-a7t0en1h4v54bl0cc9b0lr5fm5b8l6li.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

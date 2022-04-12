@@ -22,7 +22,10 @@ class FormularioPostFragment : Fragment() {
 
     private val mainViewModel: MainViewModel by activityViewModels()
     private lateinit var binding: FragmentFormularioPostBinding
+
     private var categoriaSelecionada = 0L
+
+    private var postagemSelecionada: Postagem? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +36,8 @@ class FormularioPostFragment : Fragment() {
             layoutInflater, container, false
         )
 
+        carregarDados()
+
         mainViewModel.listCategoria()
         mainViewModel.myCategoriaResponse.observe(viewLifecycleOwner){
                 response -> Log.d("Requisição", response.body().toString())
@@ -40,10 +45,10 @@ class FormularioPostFragment : Fragment() {
         }
 
         binding.buttonPublicar.setOnClickListener {
-        inserirNoBanco()
+            inserirNoBanco()
         }
 
-         return binding.root
+        return binding.root
     }
     fun spinnerCategoria(categorias: List<Categoria>?) {
 
@@ -74,15 +79,16 @@ class FormularioPostFragment : Fragment() {
                 }
         }
     }
-
-    fun validarCampos(
-        titulo: String, desc: String, link: String,
-         ): Boolean {
+    fun validaCampos(
+        titulo: String, desc: String, link: String
+        //localizacao: String
+    ): Boolean {
 
         return !(
-                 (titulo == "" || titulo.length < 3 || titulo.length > 20) ||
-                 (desc == "" || desc.length < 5 || desc.length > 300) ||
-                 (link == "" || link.length < 3 || link.length > 100)
+                (titulo == "" || titulo.length < 3 || titulo.length > 40) ||
+                        (desc == "" || desc.length < 5 || desc.length > 500) ||
+                        (link == "" || link.length < 3 || link.length > 300)
+                        //(localizacao == "" || localizacao.length < 5 || localizacao.length > 25)
                 )
     }
     fun inserirNoBanco() {
@@ -90,21 +96,45 @@ class FormularioPostFragment : Fragment() {
         val titulo = binding.editTitulo.text.toString()
         val desc = binding.editTextDescri.text.toString()
         val link = binding.editTextLink.text.toString()
-        val autor = "usuário"
+        val autor = binding.editAutor.text.toString()
         val dataHora = LocalDate.now().toString()
         val categoria = Categoria(categoriaSelecionada, null, null)
 
-        if (validarCampos(titulo, desc, link)) {
-            val postagem = Postagem(0,
-                titulo, desc, link, dataHora, autor, categoria)
+        if (validaCampos(titulo, desc, link)) {
+            if(postagemSelecionada == null) {
+                val postagem = Postagem(0,
+                    titulo, desc, link, dataHora, autor, categoria)
 
-            mainViewModel.addPostagem(postagem)
+                mainViewModel.addPostagem(postagem)
+            } else{
+                val postagem = Postagem(
+                    postagemSelecionada?.id!!,
+                    titulo, desc, link, dataHora, autor, categoria
+                )
+                mainViewModel.updatePostagem(postagem)
+            }
             Toast.makeText(context, "Postagem Salva", Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_formularioPostFragment_to_postagemFragment)
 
         } else {
             Toast.makeText(context, "Preencha os campos corretamente!", Toast.LENGTH_LONG).show()
 
+        }
+    }
+
+
+    private fun carregarDados(){
+        postagemSelecionada = mainViewModel.postagemSelecionada
+        if (postagemSelecionada != null){
+            binding.editTitulo.setText(postagemSelecionada?.titulo)
+            binding.editTextDescri.setText(postagemSelecionada?.descricao)
+            binding.editTextLink.setText(postagemSelecionada?.imagem)
+            binding.editAutor.setText(postagemSelecionada?.autor)
+        } else {
+            binding.editTitulo.text = null
+            binding.editTextDescri.text = null
+            binding.editTextLink.text = null
+            binding.editAutor.text = null
         }
     }
 }

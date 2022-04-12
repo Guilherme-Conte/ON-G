@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/entrarFragment">
+
+    <fragment
+        android:id="@+id/entrarFragment"
+        android:name="com.generation.on_g.EntrarFragment"
+        android:label="fragment_entrar"
+        tools:layout="@layout/fragment_entrar" >
+        <action
+            android:id="@+id/action_entrarFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.generation.on_g.registroFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registroFragment_to_entrarFragment"
+            app:destination="@id/entrarFragment" />
+    </fragment>
+</navigation>

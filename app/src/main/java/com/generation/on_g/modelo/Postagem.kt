@@ -7,7 +7,7 @@ data class Postagem(
     var titulo : String,
     var descricao : String,
     var imagem : String,
-    var dataHora : String,
+    var datahora : String,
     var autor : String,
     var tema : Categoria
     ){

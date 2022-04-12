@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Task do PI</string>
+    <string name="app_name">ON-G</string>
     <string-array name="itens">
         <item>Humanitária</item>
         <item>Vestimentas</item>
@@ -10,4 +10,6 @@
     <string name="FloatingButton">FloatingAdd</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editPost" />
+    <string name="deleteButton" />
 </resources>

@@ -21,6 +21,8 @@ class MainViewModel @Inject constructor(
         val repository: Repository
         ): ViewModel() {
 
+    var postagemSelecionada: Postagem? = null
+
     private var _myCategoriaResponse =
         MutableLiveData<Response<List<Categoria>>>()
     val myCategoriaResponse: LiveData<Response<List<Categoria>>> =
@@ -47,24 +49,46 @@ class MainViewModel @Inject constructor(
         }
     }
 
+
     fun addPostagem(postagem: Postagem) {
         viewModelScope.launch {
             try {
                 repository.addPostagem(postagem)
-                listPostagem()
+                postagem()
             } catch (e: Exception) {
                 Log.d("Erro", e.message.toString())
             }
         }
     }
 
-    fun listPostagem(){
+    fun postagem(){
         viewModelScope.launch{
             try{
-                val response = repository.listPostagem()
+                val response = repository.postagem()
                 _myPostagemResponse.value = response
             }catch (e: Exception){
-                Log.e("Developer", "Error", e)
+                Log.e("Requisicao",e.message.toString())
+            }
+        }
+    }
+
+    fun updatePostagem(postagem: Postagem){
+        viewModelScope.launch {
+            try {
+                repository.updatePostagem(postagem)
+                postagem()
+            }catch (e: Exception){
+                Log.d("Erro", e.message.toString())
+            }
+        }
+    }
+    fun deletePostagem(id: Long){
+        viewModelScope.launch {
+            try {
+                repository.deletePostagem(id)
+                postagem()
+            }catch (e: Exception){
+                Log.d("Erro", e.message.toString())
             }
         }
     }

@@ -4,108 +4,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTintMode="screen"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/editTitulo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#00FFFFFF"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#37333D"
         android:ems="10"
         android:hint="Digite um título"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textColor="#000000"
+        android:textColorHint="#787777"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editAutor" />
 
     <EditText
         android:id="@+id/editTextDescri"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:backgroundTint="#00FFFFFF"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#37333D"
         android:ems="10"
         android:hint="Descrição"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textColor="#000000"
+        android:textColorHint="#787777"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTitulo" />
 
     <EditText
         android:id="@+id/editTextLink"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:backgroundTint="#00FFFFFF"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#37333D"
         android:ems="10"
         android:hint="Link"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColorHint="#787777"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDescri" />
 
     <Spinner
         android:id="@+id/spinnerCategoria"
-        android:layout_width="210dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#000000"
-        android:entries="@array/itens"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editLoca" />
-
-    <Button
-        android:id="@+id/buttonPublicar"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="#000000"
-        android:text="Publicar"
-        app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerCategoria" />
-
-    <EditText
-        android:id="@+id/editLoca"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:backgroundTint="#00FFFFFF"
-        android:ems="10"
-        android:hint="Localização"
-        android:inputType="textPersonName"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#B304FF"
+        android:dropDownSelector="@color/black"
+        android:entries="@array/itens"
+        android:foregroundTint="#000000"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextLink" />
 
-    <Button
-        android:id="@+id/buttonLink"
-        android:layout_width="42dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="25dp"
-        android:text="+"
+    <ImageButton
+        android:id="@+id/buttonPublicar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDescri" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCategoria"
+        app:srcCompat="@drawable/publicar1" />
 
-    <Button
-        android:id="@+id/buttonLocali"
-        android:layout_width="41dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="25dp"
-        android:text="+"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00A50505"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLink" />
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toEndOf="@+id/editTextDescri"
+        app:layout_constraintTop_toBottomOf="@+id/editTitulo"
+        app:srcCompat="@drawable/plusform"/>
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextLink"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescri"
+        app:srcCompat="@drawable/plusform" />
+
+    <EditText
+        android:id="@+id/editAutor"
+        android:layout_width="316dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#37333D"
+        android:ems="10"
+        android:hint="Autor"
+        android:inputType="textPersonName"
+        android:textColorHint="#787777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
